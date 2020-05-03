@@ -17,10 +17,10 @@ const routes: Routes = [
             component: RecipePage,
           },
           {
-            path: "session/:sessionId",
+            path: "recipe/:recipeId",
             loadChildren: () =>
-              import("../session-detail/session-detail.module").then(
-                (m) => m.SessionDetailPageModule
+              import("../recipe-detail/recipe-detail.module").then(
+                (m) => m.RecipeDetailPageModule
               ),
           },
         ],

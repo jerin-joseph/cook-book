@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SessionDetailPageRoutingModule } from './session-detail-routing.module';
+import { RecipeFilterPageRoutingModule } from './recipe-filter-routing.module';
 
-import { SessionDetailPage } from './session-detail.page';
+import { RecipeFilterPage } from './recipe-filter.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SessionDetailPageRoutingModule
+    RecipeFilterPageRoutingModule
   ],
-  declarations: [SessionDetailPage]
+  declarations: [RecipeFilterPage]
 })
-export class SessionDetailPageModule {}
+export class RecipeFilterPageModule {}

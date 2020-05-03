@@ -32,16 +32,23 @@ const routes: Routes = [
       import("./pages/tabs/tabs.module").then((m) => m.TabsPageModule),
   },
   {
-    path: "session-detail",
+    path: "recipe-detail",
     loadChildren: () =>
-      import("./pages/session-detail/session-detail.module").then(
-        (m) => m.SessionDetailPageModule
+      import("./pages/recipe-detail/recipe-detail.module").then(
+        (m) => m.RecipeDetailPageModule
       ),
   },
   {
     path: "about",
     loadChildren: () =>
       import("./pages/about/about.module").then((m) => m.AboutPageModule),
+  },
+  {
+    path: "recipe-detail",
+    loadChildren: () =>
+      import("./pages/recipe-detail/recipe-detail.module").then(
+        (m) => m.RecipeDetailPageModule
+      ),
   },
 
   // {
