@@ -1,0 +1,38 @@
+[
+  {
+    "id": "r1",
+    "title": "Biriyani",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Schnitzel.JPG/800px-Schnitzel.JPG",
+    "ingredients": ["French fries", "pork meat", "salad"]
+  },
+  {
+    "id": "r2",
+    "title": "Pizza",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Pasta_Puttanesca.jpg/1920px-Pasta_Puttanesca.jpg",
+    "ingredients": ["Spaghetti", "tomatoe", "meat"]
+  },
+  {
+    "id": "r3",
+    "title": "Hot Water",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Schnitzel.JPG/800px-Schnitzel.JPG",
+    "ingredients": ["French fries", "pork meat", "salad"]
+  },
+  {
+    "id": "r4",
+    "title": "Boiled Egg",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Pasta_Puttanesca.jpg/1920px-Pasta_Puttanesca.jpg",
+    "ingredients": ["Spaghetti", "tomatoe", "meat"]
+  },
+  {
+    "id": "r5",
+    "title": "Schnitzel",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Schnitzel.JPG/800px-Schnitzel.JPG",
+    "ingredients": ["French fries", "pork meat", "salad"]
+  },
+  {
+    "id": "r6",
+    "title": "Spaghetti",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Pasta_Puttanesca.jpg/1920px-Pasta_Puttanesca.jpg",
+    "ingredients": ["Spaghetti", "tomatoe", "meat"]
+  }
+]

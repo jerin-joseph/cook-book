@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { RecipeService } from "./recipe.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-recipe",
@@ -15,9 +17,24 @@ export class RecipePage implements OnInit {
   groups: any = [];
   confDate: string;
   showSearchbar: boolean;
+  //myapp
+  public recipeData = [];
+  loadedData: any;
 
-  constructor() {}
-  ngOnInit() {}
+  constructor(private recipeService: RecipeService, private router: Router) {}
+  ngOnInit() {
+    this.updateRecipes();
+  }
+
+  updateRecipes() {
+    this.recipeService.getData().subscribe(
+      (data) => {
+        this.recipeData = data;
+      },
+      (err) => console.error(err),
+      () => console.log("done")
+    );
+  }
 
   updateSchedule() {
     // Close any open sliding items when the schedule updates

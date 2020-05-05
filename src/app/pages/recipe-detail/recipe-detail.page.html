@@ -1,9 +1,51 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>recipe-detail</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="speaker-detail">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/app/tabs/recipe"></ion-back-button>
+      </ion-buttons>
+      <ion-buttons *ngIf="recipe" slot="end">
+        <ion-button>
+          <ion-icon
+            slot="icon-only"
+            ios="star-outline"
+            md="star-outline"
+          ></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon
+            slot="icon-only"
+            ios="ellipsis-horizontal"
+            md="ellipsis-vertical"
+          ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content>
+  <div class="speaker-background" [ngStyle]="{'background-image': getUrl()}">
+    <!-- <img [src]="recipe?.imageUrl" [alt]="recipe?.title" /> -->
+    <h2>{{recipe?.title}}</h2>
+  </div>
 
+  <div class="ion-padding speaker-detail">
+    <p>{{recipe?.ingredients}} Say hello on social media!</p>
+
+    <hr />
+
+    <ion-chip color="twitter" button>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-label>Twitter</ion-label>
+    </ion-chip>
+
+    <ion-chip color="dark" button>
+      <ion-icon name="logo-github"></ion-icon>
+      <ion-label>GitHub</ion-label>
+    </ion-chip>
+
+    <ion-chip color="instagram" button>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-label>Instagram</ion-label>
+    </ion-chip>
+  </div>
 </ion-content>
